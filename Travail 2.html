@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TP2</title>
+    <style>
+        li {
+            display: block;
+            position: relative;
+            width: 100px;
+        }
+
+        ul.sous_menu {
+            display: none;
+        }
+
+        li:hover>a,
+        li:hover {
+            color: rgb(0, 247, 255);
+            background-color: rgb(147, 171, 218);
+        }
+
+        a:link,
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        li:hover>ul.sous_menu {
+            display: block;
+            position: absolute;
+            top: -25px;
+            left: 80%;
+        }
+
+        body {
+            background-image: url("images/Fond.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .titre {
+            margin-left: 2%;
+            margin-top: 4%;
+            color: white;
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+
+        .button {
+            margin-left: 2%;
+            margin-top: 20px;
+            text-align: left;
+            color: white;
+            background: rgba(110, 109, 109, 0.3);
+            border-radius: 6px;
+            padding: 7px;
+            width: 180px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .subButton {
+            margin-left: 2%;
+            margin-top: 10px;
+            text-align: left;
+            color: white;
+            text-decoration-color: white;
+            background: rgba(110, 109, 109, 0.3);
+            border-radius: 6px;
+            padding: 7px;
+            width: 180px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="titre">Favoris</div>
+
+    <li class="button"><img style="width: 18px;" src="images/music_icon.png" alt="Submenu icon"> Musiques <img
+            style=" float: right; margin-top: 6px;" src="images/ICON_submenu.png" alt="Submenu icon">
+        <ul class="sous_menu">
+            <li class="subButton"> <a href=" " target="_blank">Rock</a></li>
+            <li class="subButton"> <a href="http://www.rds.ca/" target="_blank">Jazz</a>
+                <img style=" float: right; margin-top: 6px;" src="images/ICON_submenu.png" alt="Submenu icon">
+                <ul class="sous_menu">
+                    <li class="subButton"> <a href=" " target="_blank">Pat Metheny</a></li>
+                    <li class="subButton"> <a href=" " target="_blank">Miles Davis</a></li>
+                    <li class="subButton"> <a href=" " target="_blank">UZEB</a>
+                        <img style=" float: right; margin-top: 6px;" src="images/ICON_submenu.png" alt="Submenu icon">
+
+                        <ul class="sous_menu">
+                            <li class="subButton"> <a href=" " target="_blank">Allain Caron</a></li>
+                            <li class="subButton"> <a href=" " target="_blank">Michel Cusson</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="subButton"> <a href=" " target="_blank">Latin</a></li>
+            <li class="subButton"> <a href=" " target="_blank">Blues</a></li>
+            <li class="subButton"> <a href=" " target="_blank">Metal</a></li>
+            <li class="subButton"> <a href=" " target="_blank">Classique</a></li>
+            <li class="subButton"> <a href=" " target="_blank">Folk</a></li>
+        </ul>
+    </li>
+
+    <li class="button"><img style="width: 18px;" src="images/news_icon.png" alt="Submenu icon"> Nouvelles
+        <img style=" float: right; margin-top: 6px;" src="images/ICON_submenu.png" alt="Submenu icon">
+
+        <ul class="sous_menu">
+            <li class="subButton"> <img style="width: 16px;" src="images/radio_canada_icon.png" alt="Submenu icon"> <a
+                    href="https://www.radio-canada.ca" target="_blank">Radio Canada</a></li>
+            <li class="subButton"> <img style="width: 16px;" src="images/nbc_icon.png" alt="Submenu icon"> <a
+                    href="https://www.nbc.com/" target="_blank">NBC News</a></li>
+            <li class="subButton"> <img style="width: 16px;" src="images/cnn_icon.png" alt="Submenu icon"> <a
+                    href="https://www.cnn.com/" target="_blank">CNN News</a></li>
+            <li class="subButton"> <img style="width: 16px;" src="images/meteo_icon.png" alt="Submenu icon"> Météo
+                <img style=" float: right; margin-top: 6px;" src="images/ICON_submenu.png" alt="Submenu icon">
+
+                <ul class="sous_menu">
+                    <li class="subButton"> <img style="width: 16px;" src="images/meteo_media_icon.png"
+                            alt="Submenu icon"> <a href="https://www.meteomedia.com/ca/meteo/quebec/sainte-therese"
+                            target="_blank">Météomédia</a></li>
+                    <li class="subButton"> <img style="width: 16px;" src="images/Hurricane_icon.png" alt="Submenu icon">
+                        <a href="https://www.nhc.noaa.gov/" target="_blank">Ouragan</a>
+                    </li>
+                    <li class="subButton"> <img style="width: 16px;" src="images/wunder_icon.png" alt="Submenu icon"> <a
+                            href="https://www.wunderground.com/wundermap/" target="_blank">Wunder Ground</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li class="button"><img style="width: 18px;" src="images/game_icon.png" alt="Submenu icon"> Jeux
+        <img style=" float: right; margin-top: 6px;" src="images/ICON_submenu.png" alt="Submenu icon">
+
+        <ul class="sous_menu">
+            <li class="subButton"> <img style="width: 16px;" src="images/backgammon_icon.png" alt="Submenu icon"> <a
+                    href="http://zone.msn.com/en/backgammon/default.htm" target="_blank">Backgammon</a></li>
+            <li class="subButton"> <img style="width: 16px;" src="images/reversi_icon.png" alt="Submenu icon"> <a
+                    href="https://www.mah-jongg.ch/reversi/reversi.html" target="_blank">Reversi</a></li>
+        </ul>
+    </li>
+
+    <li class="button"><img style="width: 18px;" src="images/contact_icon.png" alt="Submenu icon"> Contacts
+        <img style=" float: right; margin-top: 6px;" src="images/ICON_submenu.png" alt="Submenu icon">
+
+        <ul class="sous_menu">
+            <li class="subButton"> <img style="width: 16px;" src="images/facebook_icon.png" alt="Submenu icon"> <a
+                    href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li class="subButton"> <img style="width: 16px;" src="images/twitter_icon.png" alt="Submenu icon"> <a
+                    href="https://twitter.com/" target="_blank">Twitter</a></li>
+            <li class="subButton"> <img style="width: 16px;" src="images/google_plus_icon.png" alt="Submenu icon"> <a
+                    href="https://accounts.google.com" target="_blank">Google+</a></li>
+        </ul>
+    </li>
+</body>
+
+</html>
